@@ -94,7 +94,7 @@ const showFare = q => {
     const row = $(`.pl li[data-to="${hit[0]}"]`);
     if (row) row.classList.add('hit');
   } else {
-    pfOut.innerHTML = `<div class="none">No fixed fare listed for that destination. <a href="tel:+9779803096480">Call 9803096480</a> for a quote, or pick one:<div class="sugg">${ALL.map(([n]) => `<button type="button" data-to="${n}">${n}</button>`).join('')}</div></div>`;
+    pfOut.innerHTML = `<div class="none">No fixed fare listed for that destination. <a href="tel:+9779801604389">Call 9801604389</a> for a quote, or pick one:<div class="sugg">${ALL.map(([n]) => `<button type="button" data-to="${n}">${n}</button>`).join('')}</div></div>`;
   }
 };
 $('#pf').addEventListener('submit', e => { e.preventDefault(); showFare(pfTo.value); });
